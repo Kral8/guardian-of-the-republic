@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guardian of the Republic | Official NFT Collection</title>
+    <style>
+        :root {
+            --gold: #d4af37;
+            --dark: #0a0a0b;
+            --white: #ffffff;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: var(--dark);
+            color: var(--white);
+            font-family: 'Georgia', serif;
+            overflow-x: hidden;
+        }
+        /* Символ в углу */
+        .symbol-logo {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            width: 80px;
+            z-index: 1000;
+            filter: drop-shadow(0 0 10px rgba(212, 175, 55, 0.5));
+        }
+        /* Шапка/Баннер */
+        header {
+            width: 100%;
+            height: 60vh;
+            background: url('Baner.png') no-repeat center center;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-bottom: 3px solid var(--gold);
+        }
+        .header-title {
+            text-align: center;
+            background: rgba(0,0,0,0.6);
+            padding: 40px;
+            border: 1px solid var(--gold);
+            backdrop-filter: blur(10px);
+        }
+        h1 {
+            font-size: 3.5rem;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            color: var(--gold);
+        }
+        /* Галерея NFT */
+        .container {
+            max-width: 1200px;
+            margin: -50px auto 100px;
+            padding: 0 20px;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+        .nft-card {
+            background: #151518;
+            border: 1px solid #333;
+            padding: 15px;
+            transition: 0.4s;
+            text-align: center;
+        }
+        .nft-card:hover {
+            border-color: var(--gold);
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px rgba(212, 175, 55, 0.2);
+        }
+        .nft-card img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 15px;
+        }
+        .nft-card h3 {
+            color: var(--gold);
+            margin: 10px 0;
+        }
+        .btn-buy {
+            display: inline-block;
+            padding: 10px 25px;
+            background: var(--gold);
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-top: 10px;
+        }
+        .btn-buy:hover {
+            background: white;
+        }
+        footer {
+            text-align: center;
+            padding: 50px;
+            border-top: 1px solid #333;
+            font-size: 0.9rem;
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+
+    <img src="simbol.png" alt="Symbol" class="symbol-logo">
+
+    <header>
+        <div class="header-title">
+            <h1>Guardian of the Republic</h1>
+            <p>Official 2028 Digital Heritage Collection</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="gallery">
+            <div class="nft-card">
+                <img src="Trump#0.jpg" alt="Trump #0">
+                <h3>The First Guardian #0</h3>
+                <p>Legendary Tier</p>
+                <a href="#" class="btn-buy">View on OpenSea</a>
+            </div>
+
+            <div class="nft-card">
+                <img src="Trump#1.png" alt="Trump #1">
+                <h3>Commander #1</h3>
+                <p>Epic Tier</p>
+                <a href="#" class="btn-buy">View on OpenSea</a>
+            </div>
+
+            <div class="nft-card">
+                <img src="Trump#2.png" alt="Trump #2">
+                <h3>Patriot Sentinel #2</h3>
+                <p>Rare Tier</p>
+                <a href="#" class="btn-buy">View on OpenSea</a>
+            </div>
+
+            <div class="nft-card">
+                <img src="Trump#3.png" alt="Trump #3">
+                <h3>Victory Vision #3</h3>
+                <p>Rare Tier</p>
+                <a href="#" class="btn-buy">View on OpenSea</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2026 Guardian of the Republic. All Rights Reserved.
+    </footer>
+
+</body>
+</html>
